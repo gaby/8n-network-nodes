@@ -1,31 +1,25 @@
 {
-	"compilerOptions": {
-		"target": "es2019",
-		"module": "commonjs",
-		"lib": ["es2019"],
-		"declaration": true,
-		"outDir": "./dist",
-		"rootDir": "./",
-		"strict": true,
-		"noUnusedLocals": true,
-		"noUnusedParameters": true,
-		"noImplicitReturns": true,
-		"noFallthroughCasesInSwitch": true,
-		"moduleResolution": "node",
-		"allowSyntheticDefaultImports": true,
-		"esModuleInterop": true,
-		"experimentalDecorators": true,
-		"emitDecoratorMetadata": true,
-		"skipLibCheck": true,
-		"forceConsistentCasingInFileNames": true,
-		"resolveJsonModule": true
-	},
-	"include": [
-		"nodes/**/*",
-		"credentials/**/*"
-	],
-	"exclude": [
-		"node_modules",
-		"dist"
-	]
-} 
+  "compilerOptions": {
+    "target": "es2019",
+    "module": "commonjs",
+    "lib": ["es2019"],
+    "declaration": true,
+    "outDir": "./dist",
+    "rootDir": "./",
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true
+  },
+  "include": ["nodes/**/*", "credentials/**/*"],
+  "exclude": ["node_modules", "dist", "nodes/**/__tests__"]
+}

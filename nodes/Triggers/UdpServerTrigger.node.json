@@ -1,4 +1,4 @@
 {
-	"node": "UdpServerTrigger.node.ts",
-	"nodeClass": "UdpServerTrigger"
-} 
+  "node": "UdpServerTrigger.node.ts",
+  "nodeClass": "UdpServerTrigger"
+}
