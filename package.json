@@ -1,57 +1,58 @@
 {
-	"name": "n8n-nodes-network-basic-nodes",
-	"version": "0.2.0",
-	"description": "n8n basic network nodes to send data via TCP and UDP protocols.",
-	"keywords": [
-		"n8n-community-node-package"
-	],
-	"license": "MIT",
-	"homepage": "https://github.com/DiegoDVG/n8n-nodes-network-basic-nodes#readme",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/DiegoDVG/n8n-nodes-network-basic-nodes.git"
-	},
-	"bugs": {
-		"url": "https://github.com/DiegoDVG/n8n-nodes-network-basic-nodes/issues"
-	},
-	"author": {
-		"name": "Diego Vazquez Gonzalez",
-		"email": "contacto@diegovazquez.me"
-	},
-	"main": "index.js",
-	"scripts": {
-		"build": "tsc && gulp build:icons",
-		"dev": "tsc --watch",
-		"format": "prettier nodes credentials --write",
-		"lint": "eslint nodes package.json",
-		"lintfix": "eslint nodes package.json --fix",
-		"prepublishOnly": "npm run build"
-	},
-	"files": [
-		"dist"
-	],
-	"n8n": {
-		"n8nNodesApiVersion": 1,
-		"credentials": [],
-		"nodes": [
-			"dist/nodes/TCP/TcpClient.node.js",
-			"dist/nodes/UDP/UdpClient.node.js",
-			"dist/nodes/Triggers/TcpServerTrigger.node.js",
-			"dist/nodes/Triggers/UdpServerTrigger.node.js"
-		]
-	},
-	"devDependencies": {
-		"@types/node": "^24.0.3",
-		"@typescript-eslint/eslint-plugin": "^8.0.0",
-		"@typescript-eslint/parser": "^8.0.0",
-		"eslint": "^8.29.0",
-		"eslint-plugin-n8n-nodes-base": "^1.11.0",
-		"gulp": "^4.0.2",
-		"n8n-workflow": "*",
-		"prettier": "^2.7.1",
-		"typescript": "^4.8.4"
-	},
-	"peerDependencies": {
-		"n8n-workflow": "*"
-	}
+  "name": "n8n-nodes-network-basic-nodes",
+  "version": "0.2.0",
+  "description": "n8n basic network nodes to send data via TCP and UDP protocols.",
+  "keywords": [
+    "n8n-community-node-package"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/DiegoDVG/n8n-nodes-network-basic-nodes#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DiegoDVG/n8n-nodes-network-basic-nodes.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DiegoDVG/n8n-nodes-network-basic-nodes/issues"
+  },
+  "author": {
+    "name": "Diego Vazquez Gonzalez",
+    "email": "contacto@diegovazquez.me"
+  },
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc && gulp build:icons",
+    "dev": "tsc --watch",
+    "format": "prettier nodes credentials --write",
+    "lint": "eslint nodes package.json",
+    "lintfix": "eslint nodes package.json --fix",
+    "prepublishOnly": "npm run build",
+    "test": "npm run build && node --test test"
+  },
+  "files": [
+    "dist"
+  ],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "credentials": [],
+    "nodes": [
+      "dist/nodes/TCP/TcpClient.node.js",
+      "dist/nodes/UDP/UdpClient.node.js",
+      "dist/nodes/Triggers/TcpServerTrigger.node.js",
+      "dist/nodes/Triggers/UdpServerTrigger.node.js"
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.3",
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
+    "@typescript-eslint/parser": "^8.0.0",
+    "eslint": "^8.29.0",
+    "eslint-plugin-n8n-nodes-base": "^1.11.0",
+    "gulp": "^4.0.2",
+    "n8n-workflow": "*",
+    "prettier": "^2.7.1",
+    "typescript": "^4.8.4"
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  }
 }

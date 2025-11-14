@@ -1,4 +1,4 @@
 {
-	"node": "UdpClient.node.ts",
-	"nodeClass": "UdpClient"
-} 
+  "node": "UdpClient.node.ts",
+  "nodeClass": "UdpClient"
+}
